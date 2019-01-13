@@ -1,0 +1,69 @@
+// Styles for desktop widths
+
+@media only screen and (min-width: $breakpoint-desktop) {
+
+    body {
+        background-color: $gray-light;
+        background-image: url('https://source.unsplash.com/random/1600x1200');
+        background-position: top center;
+        background-attachment: fixed;
+    }
+
+    .container {
+        max-width: $breakpoint-desktop;
+        margin: 0 auto;
+        @include shadow-sm;
+    }
+
+    //Create side by side layout
+    .main-content {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: $padding-xxl;
+        background-color: $white;
+
+        main {
+            width: 640px;
+        }
+        .global-sidebar {
+            width: 320px;
+            border: 0;
+            margin-top: 0;
+            &__content {
+                padding-top: 0;
+            }
+            .widget_custom_html {
+                padding: 0;
+            }
+            .search-input {
+                max-width: 100%;
+            }
+        }
+
+        //Single article page
+        .single-article {
+            width: 100%;
+            padding: 0 $padding-md;
+        }
+    }
+
+    //Feeds
+    .feed-article {
+        margin-left: 0;
+        padding-left: 0;
+        &__heading {
+            font-size: $font-base;
+        }
+    }
+
+    .footer {
+        &__nav {
+            width: 60%;
+            margin-left: $margin-md;
+        }
+        &__meta {
+            text-align: center;
+        }
+    }
+
+}

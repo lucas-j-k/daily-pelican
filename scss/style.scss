@@ -1,0 +1,27 @@
+/*
+	Theme Name: Daily Pelican
+	Description: News / Blog theme including space for basic ad slots
+	Version: 1.0.0
+	Author: LucasJK
+	Author URI: http://www.lucasjk.com
+	Tags: HTML5, CSS3
+
+*/
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+@import 'normalize';
+@import 'variables';
+@import 'utilities';
+@import 'base';
+@import 'tablet';
+@import 'desktop';
+
+//Placeholder ads:
+@import 'ads';
+
+
+
+

@@ -1,0 +1,55 @@
+// COLORS
+
+$black: #161616;
+$white: #ffffff;
+
+$black-muted: lighten($black, 20%);
+
+$gray-light: darken($white, 20%);
+
+$black-overlay-md: rgba($black, 0.75);
+
+$accent-mid: #F7CE4B;
+
+$slate-gray-mid: #505B6F;
+
+$accent-light: #F6D771;
+
+
+$accent-mid: $accent-mid;
+
+// TYPOGRAPHY
+$font-heading: 'Prata', serif;
+$font-body: 'Libre Baskerville', serif;
+$font-base: 14px;
+
+$font-lg: 18px;
+$font-xl: 24px;
+$font-xxl: 28px;
+$font-sm: 12px;
+$font-huge: 40px;
+
+
+//LAYOUT
+$padding-xxs: 2px; 
+$padding-xs: 4px; 
+$padding-sm: 8px; 
+$padding-md: 12px;
+$padding-lg: 16px;
+$padding-xl: 18px;
+$padding-xxl: 20px;
+
+$margin-xxs: 2px; 
+$margin-xs: 4px; 
+$margin-sm: 8px;
+$margin-md: 12px;
+$margin-lg: 16px;
+$margin-xl: 18px;
+$margin-xxl: 20px;
+
+$mobile-menu-height: 75px;
+
+
+$breakpoint-tablet: 740px;
+$breakpoint-desktop: 1020px;
+$breakpoint-xlarge: 1600px;

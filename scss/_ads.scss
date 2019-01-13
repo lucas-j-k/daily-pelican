@@ -1,0 +1,94 @@
+//Style the Ad Placements to simulate display ads.
+
+
+.placeholder-ad-wrap {
+    background-color: $white;
+    text-align: center;
+    margin: 0;
+    &--mobile-ban {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: $white;
+    }
+}
+
+.placeholder-ad-img {
+    margin: 0 auto;
+    background-size:cover;
+    &--mpu-1 {
+        background-image: url('https://source.unsplash.com/random/300x250');
+        width: 300px;
+        height: 250px;
+    }
+    &--mpu-2 {
+        background-image: url('https://source.unsplash.com/random/300x251');
+        width: 300px;
+        height: 250px;
+    }
+    &--mpu-3 {
+        background-image: url('https://source.unsplash.com/random/300x252');
+        width: 300px;
+        height: 250px;
+    }
+    &--banner-1 {
+    }
+    &--mobile-ban {
+        background-image: url('https://source.unsplash.com/random/320x51');
+        width: 320px;
+        height: 50px;
+    }
+}
+
+
+@media only screen and (min-width: $breakpoint-tablet) {
+    .placeholder-ad-img {
+        &--banner-1 {
+            background-image: url('https://source.unsplash.com/random/728x90');
+            width: 728px;
+            height: 90px;
+        }
+        &--mobile-ban {
+            display: none;
+        }
+    }
+    .placeholder-ad-wrap {
+        padding: $margin-xxl 0;
+        &--banner-1, &--banner-2 {
+            position: static;
+            width: auto;
+        }
+        &--mobile-ban {
+            display: none;
+        }
+    }
+    .global-sidebar {
+        .placeholder-ad-img {
+            margin: 0;
+        }
+    }
+}
+
+
+@media only screen and (min-width: $breakpoint-desktop) {
+    .placeholder-ad-img {
+        &--banner-1 {
+            background-image: url('https://source.unsplash.com/random/970x250');
+            width: 970px;
+            height: 250px;
+        }
+        &--mpu-1 {
+            background-image: url('https://source.unsplash.com/random/300x600');
+            width: 300px;
+            height: 600px;
+        }
+    }
+
+    .global-sidebar {
+        .placeholder-ad-wrap {
+            padding: 0;
+        }
+    }
+}

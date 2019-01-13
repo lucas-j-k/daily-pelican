@@ -1,0 +1,1247 @@
+/*
+	Theme Name: Daily Pelican
+	Description: News / Blog theme including space for basic ad slots
+	Version: 1.0.0
+	Author: LucasJK
+	Author URI: http://www.lucasjk.com
+	Tags: HTML5, CSS3
+
+*/
+/*------------------------------------*    MAIN
+\*------------------------------------*/
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+/* line 11, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+/* line 23, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 32, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 45, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 56, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+/* line 68, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 77, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 87, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 97, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 108, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 117, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 125, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 129, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+/* line 140, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 152, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 168, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 178, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 187, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 198, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 210, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+/* line 221, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 232, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 245, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+/* line 253, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+/* line 262, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 272, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 282, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+/* line 291, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 300, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+/* line 312, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 320, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+/* line 331, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+/* line 339, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 4, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_utilities.scss */
+.font-heading {
+  font-family: "Prata", serif;
+}
+
+/* line 8, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_utilities.scss */
+.font-body {
+  font-family: "Libre Baskerville", serif;
+}
+
+/* line 3, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 7, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+body {
+  font-family: "Libre Baskerville", serif;
+  font-size: 14px;
+}
+
+/* line 12, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Prata", serif;
+}
+
+/* line 16, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+a {
+  text-decoration: none;
+  color: #494949;
+}
+
+/* line 21, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+p {
+  color: #494949;
+}
+
+/* line 25, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* line 34, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.main-content {
+  margin-top: 75px;
+  min-height: 100vh;
+}
+
+/* line 40, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 1000;
+}
+
+/* line 49, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.branding-bar {
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-box-shadow: 0px 4px 15px 0px rgba(80, 91, 111, 0.5);
+  -moz-box-shadow: 0px 4px 15px 0px rgba(80, 91, 111, 0.5);
+  box-shadow: 0px 4px 15px 0px rgba(80, 91, 111, 0.5);
+}
+
+/* line 55, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.branding-bar__left {
+  display: flex;
+  align-items: center;
+}
+
+/* line 59, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.branding-bar__title {
+  font-size: 24px;
+  margin-left: 12px;
+  text-transform: uppercase;
+}
+
+/* line 64, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.branding-bar__right {
+  margin-left: 12px;
+}
+
+/* line 67, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.branding-bar__logo-wrap {
+  font-size: 24px;
+}
+
+/* line 69, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.branding-bar__logo-wrap svg {
+  width: 45px;
+  height: 45px;
+}
+
+/* line 74, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.branding-bar__menu-toggle {
+  font-size: 24px;
+}
+
+/* line 80, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.top-menu-wrapper {
+  position: fixed;
+  display: none;
+  background: #ffffff;
+  top: 75px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  padding: 12px;
+}
+
+/* line 95, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.main-nav {
+  margin-bottom: 20px;
+}
+
+/* line 97, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.main-nav .menu-item {
+  margin-bottom: 8px;
+  padding: 8px 0;
+  border-bottom: 1px solid #494949;
+}
+
+/* line 101, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.main-nav .menu-item a {
+  color: #494949;
+  font-size: 18px;
+}
+
+/* line 109, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.secondary-nav .menu-item {
+  margin-bottom: 12px;
+}
+
+/* line 113, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.secondary-nav a {
+  color: #505B6F;
+  font-size: 14px;
+}
+
+/* line 121, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.social-menu__list {
+  display: flex;
+  align-items: center;
+}
+
+/* line 125, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.social-menu__item {
+  padding: 8px;
+  margin-right: 8px;
+}
+
+/* line 129, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.social-menu__link {
+  color: #161616;
+  font-size: 28px;
+}
+
+/* line 141, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.category-featured__article {
+  padding: 0;
+  background-color: #161616;
+  margin-bottom: 18px;
+}
+
+/* line 146, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.category-featured__main {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+}
+
+/* line 152, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.category-featured__permalink {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: flex-end;
+}
+
+/* line 158, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.category-featured__heading {
+  background-color: rgba(22, 22, 22, 0.75);
+  padding: 8px;
+  width: 80%;
+}
+
+/* line 163, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.category-featured__title {
+  margin: 8px 0;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+/* line 169, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.category-featured__date {
+  color: #cccccc;
+}
+
+/* line 172, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.category-featured__meta {
+  padding: 0 8px;
+}
+
+/* line 175, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.category-featured .feed-tags {
+  margin-bottom: 0;
+}
+
+/* line 183, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.feed-tags {
+  display: flex;
+  align-items: center;
+}
+
+/* line 186, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.feed-tags__list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 8px 0;
+}
+
+/* line 193, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.feed-tags li {
+  margin-right: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #F6D771;
+  padding: 4px;
+  background-color: #F7CE4B;
+}
+
+/* line 199, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.feed-tags li a {
+  color: #494949;
+}
+
+/* line 205, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.category-heading {
+  padding: 16px 8px;
+  margin: 0;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+/* line 210, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.category-heading--light {
+  color: #161616;
+  background-color: #ffffff;
+}
+
+/* line 214, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.category-heading--dark {
+  background-color: #161616;
+  color: #cccccc;
+}
+
+/* line 222, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.feed-article {
+  margin-bottom: 20px;
+  padding: 0 8px;
+}
+
+/* line 225, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.feed-article__body {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* line 229, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.feed-article__text-wrap {
+  padding: 0 8px;
+}
+
+/* line 232, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.feed-article__heading {
+  margin: 8px 0;
+  font-size: 18px;
+}
+
+/* line 236, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.feed-article__heading-link {
+  color: #161616;
+}
+
+/* line 239, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.feed-article__date {
+  color: #494949;
+}
+
+/* line 242, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.feed-article__meta {
+  display: flex;
+  align-items: center;
+}
+
+/* line 254, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.single-article__header {
+  padding: 8px;
+}
+
+/* line 257, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.single-article__heading {
+  margin-bottom: 12px;
+  margin-top: 0;
+  font-size: 24px;
+}
+
+/* line 262, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.single-article__heading-link {
+  color: #161616;
+  font-size: 28px;
+}
+
+/* line 267, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.single-article__category-link a {
+  border-bottom: #F7CE4B 2px solid;
+  color: #161616;
+}
+
+/* line 272, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.single-article__body {
+  padding: 12px;
+}
+
+/* line 274, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.single-article__body p:first-child {
+  color: #161616;
+  font-weight: bold;
+}
+
+/* line 279, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.single-article__footer {
+  padding: 8px;
+}
+
+/* line 286, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.single-page {
+  padding-top: 12px;
+}
+
+/* line 288, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.single-page__header {
+  padding: 8px;
+}
+
+/* line 291, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.single-page__heading {
+  margin-bottom: 12px;
+  margin-top: 0;
+  font-size: 24px;
+}
+
+/* line 296, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.single-page__body {
+  padding: 0 12px;
+}
+
+/* line 303, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.contact-form {
+  width: 80%;
+  margin-top: 20px;
+}
+
+/* line 306, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.contact-form__form-group {
+  margin-bottom: 8px;
+}
+
+/* line 309, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.contact-form__label {
+  color: #494949;
+  font-size: 14px;
+}
+
+/* line 313, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.contact-form__input {
+  padding: 8px;
+  width: 100%;
+}
+
+/* line 317, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.contact-form__textarea {
+  padding: 8px;
+  width: 100%;
+  min-height: 150px;
+}
+
+/* line 322, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.contact-form__submit {
+  padding: 12px;
+  border-radius: 8px;
+  border: 0px;
+  background-color: #F7CE4B;
+  color: #161616;
+}
+
+/* line 333, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.archive-feed {
+  padding-top: 8px;
+}
+
+/* line 339, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.search-results-feed > .feed-article {
+  border-top: #cccccc solid 1px;
+  padding-top: 12px;
+}
+
+/* line 346, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.pagination {
+  padding: 8px;
+}
+
+/* line 348, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.pagination a, .pagination span {
+  color: #494949;
+  font-size: 18px;
+  margin-right: 4px;
+}
+
+/* line 357, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.share .social-menu__list {
+  display: inline-flex;
+  margin: 0 8px;
+}
+
+/* line 361, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.share__link {
+  margin-right: 8px;
+}
+
+/* line 367, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.article-404 {
+  min-height: 200px;
+}
+
+/* line 369, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.article-404__return {
+  border-bottom: #F7CE4B 2px solid;
+}
+
+/* line 376, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.global-sidebar {
+  margin-top: 18px;
+}
+
+/* line 381, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.global-sidebar__content > div {
+  padding: 8px;
+}
+
+/* line 385, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.global-sidebar__heading {
+  margin-bottom: 8px;
+}
+
+/* line 389, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.global-sidebar .search-input {
+  display: block;
+  width: 80%;
+  margin-bottom: 8px;
+  padding: 8px;
+}
+
+/* line 395, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.global-sidebar .search-submit {
+  padding: 8px;
+  border-radius: 4px;
+  border: 0px;
+  background-color: #505B6F;
+  color: #ffffff;
+}
+
+/* line 403, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.global-sidebar .widget_recent_entries ul, .global-sidebar .widget_archive ul {
+  margin-top: 0;
+}
+
+/* line 405, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.global-sidebar .widget_recent_entries ul li, .global-sidebar .widget_archive ul li {
+  padding: 8px 0;
+}
+
+/* line 407, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.global-sidebar .widget_recent_entries ul li a, .global-sidebar .widget_archive ul li a {
+  color: #494949;
+}
+
+/* line 413, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.global-sidebar .widget_custom_html {
+  margin-top: 0;
+}
+
+/* line 420, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.footer {
+  background-color: #494949;
+  color: #ffffff;
+}
+
+/* line 423, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.footer__content {
+  padding: 8px;
+}
+
+/* line 427, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.footer__nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 431, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.footer__nav ul li {
+  width: 50%;
+  margin-bottom: 8px;
+}
+
+/* line 434, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.footer__nav ul li a {
+  color: #ffffff;
+}
+
+/* line 440, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+.footer__meta {
+  margin-bottom: 0;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 12px;
+}
+
+@media only screen and (min-width: 740px) {
+  /* line 7, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .main-content {
+    margin-top: 0;
+  }
+  /* line 12, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .category-feed, .archive-feed {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* line 19, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .homepage-feed__non-featured {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* line 25, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .feed-article {
+    width: 46%;
+    margin: 8px 1%;
+  }
+  /* line 30, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .pagination {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  /* line 36, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .header {
+    position: static;
+  }
+  /* line 40, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .branding-bar {
+    justify-content: center;
+    box-shadow: none;
+    padding-bottom: 0;
+  }
+  /* line 44, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .branding-bar__right {
+    display: none;
+  }
+  /* line 47, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .branding-bar__title-text {
+    font-size: 40px;
+  }
+  /* line 52, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .top-menu-wrapper {
+    position: static;
+    display: block;
+    padding: 0;
+  }
+  /* line 58, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .main-nav {
+    margin-bottom: 8px;
+  }
+  /* line 60, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .main-nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  /* line 65, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .main-nav .menu-item {
+    border: 0;
+    padding: 8px;
+    background-color: #161616;
+  }
+  /* line 69, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .main-nav .menu-item a {
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 14px;
+  }
+  /* line 80, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .secondary-nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  /* line 85, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .secondary-nav .menu-item {
+    margin: 0 8px;
+  }
+  /* line 91, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .social-menu__link {
+    font-size: 18px;
+  }
+  /* line 98, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .social-menu--header .social-menu {
+    width: 50%;
+    margin: 0 auto;
+  }
+  /* line 101, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .social-menu--header .social-menu__list {
+    justify-content: center;
+  }
+  /* line 109, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .global-sidebar {
+    border: 16px #161616 solid;
+  }
+  /* line 111, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .global-sidebar__content {
+    padding: 8px;
+  }
+  /* line 114, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .global-sidebar .search-input {
+    max-width: 50%;
+  }
+  /* line 120, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .single-article {
+    width: 80%;
+    margin: 0 auto;
+  }
+  /* line 123, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .single-article__header {
+    padding: 0;
+  }
+  /* line 126, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .single-article__heading {
+    margin-top: 18px;
+  }
+  /* line 130, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .single-article__img-wrap img {
+    width: 100%;
+    display: block;
+  }
+  /* line 135, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .single-article__header-link {
+    width: 100%;
+    display: block;
+  }
+  /* line 139, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .single-article__body {
+    padding-left: 0;
+  }
+  /* line 142, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .single-article__footer {
+    padding: 0;
+  }
+  /* line 145, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .single-article__meta {
+    margin-bottom: 12px;
+  }
+  /* line 151, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .single-page {
+    width: 80%;
+    margin: 0 auto;
+  }
+  /* line 157, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .contact-form {
+    width: 75%;
+    margin: 20px auto;
+    padding-top: 18px;
+  }
+  /* line 165, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_tablet.scss */
+  .contact .single-page {
+    width: 60%;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  /* line 5, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_desktop.scss */
+  body {
+    background-color: #cccccc;
+    background-image: url("https://source.unsplash.com/random/1600x1200");
+    background-position: top center;
+    background-attachment: fixed;
+  }
+  /* line 12, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_desktop.scss */
+  .container {
+    max-width: 1020px;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 4px 15px 0px rgba(80, 91, 111, 0.5);
+    -moz-box-shadow: 0px 4px 15px 0px rgba(80, 91, 111, 0.5);
+    box-shadow: 0px 4px 15px 0px rgba(80, 91, 111, 0.5);
+  }
+  /* line 19, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_desktop.scss */
+  .main-content {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+  }
+  /* line 25, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_desktop.scss */
+  .main-content main {
+    width: 640px;
+  }
+  /* line 28, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_desktop.scss */
+  .main-content .global-sidebar {
+    width: 320px;
+    border: 0;
+    margin-top: 0;
+  }
+  /* line 32, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_desktop.scss */
+  .main-content .global-sidebar__content {
+    padding-top: 0;
+  }
+  /* line 35, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_desktop.scss */
+  .main-content .global-sidebar .widget_custom_html {
+    padding: 0;
+  }
+  /* line 38, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_desktop.scss */
+  .main-content .global-sidebar .search-input {
+    max-width: 100%;
+  }
+  /* line 44, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_desktop.scss */
+  .main-content .single-article {
+    width: 100%;
+    padding: 0 12px;
+  }
+  /* line 51, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_desktop.scss */
+  .feed-article {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  /* line 54, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_desktop.scss */
+  .feed-article__heading {
+    font-size: 14px;
+  }
+  /* line 60, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_desktop.scss */
+  .footer__nav {
+    width: 60%;
+    margin-left: 12px;
+  }
+  /* line 64, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_desktop.scss */
+  .footer__meta {
+    text-align: center;
+  }
+}
+
+/* line 4, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_ads.scss */
+.placeholder-ad-wrap {
+  background-color: #ffffff;
+  text-align: center;
+  margin: 0;
+}
+
+/* line 8, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_ads.scss */
+.placeholder-ad-wrap--mobile-ban {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+/* line 18, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_ads.scss */
+.placeholder-ad-img {
+  margin: 0 auto;
+  background-size: cover;
+}
+
+/* line 21, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_ads.scss */
+.placeholder-ad-img--mpu-1 {
+  background-image: url("https://source.unsplash.com/random/300x250");
+  width: 300px;
+  height: 250px;
+}
+
+/* line 26, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_ads.scss */
+.placeholder-ad-img--mpu-2 {
+  background-image: url("https://source.unsplash.com/random/300x251");
+  width: 300px;
+  height: 250px;
+}
+
+/* line 31, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_ads.scss */
+.placeholder-ad-img--mpu-3 {
+  background-image: url("https://source.unsplash.com/random/300x252");
+  width: 300px;
+  height: 250px;
+}
+
+/* line 38, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_ads.scss */
+.placeholder-ad-img--mobile-ban {
+  background-image: url("https://source.unsplash.com/random/320x51");
+  width: 320px;
+  height: 50px;
+}
+
+@media only screen and (min-width: 740px) {
+  /* line 48, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_ads.scss */
+  .placeholder-ad-img--banner-1 {
+    background-image: url("https://source.unsplash.com/random/728x90");
+    width: 728px;
+    height: 90px;
+  }
+  /* line 53, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_ads.scss */
+  .placeholder-ad-img--mobile-ban {
+    display: none;
+  }
+  /* line 57, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_ads.scss */
+  .placeholder-ad-wrap {
+    padding: 20px 0;
+  }
+  /* line 59, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_ads.scss */
+  .placeholder-ad-wrap--banner-1, .placeholder-ad-wrap--banner-2 {
+    position: static;
+    width: auto;
+  }
+  /* line 63, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_ads.scss */
+  .placeholder-ad-wrap--mobile-ban {
+    display: none;
+  }
+  /* line 68, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_ads.scss */
+  .global-sidebar .placeholder-ad-img {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  /* line 77, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_ads.scss */
+  .placeholder-ad-img--banner-1 {
+    background-image: url("https://source.unsplash.com/random/970x250");
+    width: 970px;
+    height: 250px;
+  }
+  /* line 82, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_ads.scss */
+  .placeholder-ad-img--mpu-1 {
+    background-image: url("https://source.unsplash.com/random/300x600");
+    width: 300px;
+    height: 600px;
+  }
+  /* line 90, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_ads.scss */
+  .global-sidebar .placeholder-ad-wrap {
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=../style.map */

@@ -1,0 +1,447 @@
+// BASE STYLES - MOBILE FIRST
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-body;
+    font-size: $font-base;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-heading;
+}
+
+a {
+    text-decoration: none;
+    color: $black-muted;
+}
+
+p {
+    color: $black-muted;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+// ================================
+// HEADER / NAV
+// ================================
+
+.main-content {
+    // margin-top: $font-xxl + $padding-md*2;
+    margin-top: $mobile-menu-height;
+    min-height: 100vh;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $white;
+    z-index: 1000;
+}
+
+.branding-bar {
+    padding: $padding-md;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include shadow-sm;  
+    &__left {
+        display: flex;
+        align-items: center;
+    }
+    &__title {
+        font-size: $font-xl;
+        margin-left: $margin-md;
+        text-transform: uppercase;
+    }
+    &__right {
+        margin-left: $margin-md;
+    }
+    &__logo-wrap {
+        font-size: $font-xl;
+        svg {
+            width: 45px;
+            height: 45px;
+        }
+    }
+    &__menu-toggle {
+        font-size: $font-xl;
+    }
+
+}
+
+.top-menu-wrapper {
+    position: fixed;
+    display: none;
+    background: $white;
+    top: $mobile-menu-height;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    padding: $padding-md;
+    
+}
+
+.main-nav {
+    margin-bottom: $margin-xxl;
+    .menu-item {
+        margin-bottom: $margin-sm;
+        padding: $padding-sm 0;
+        border-bottom: 1px solid $black-muted;
+        a {
+            color: $black-muted;
+            font-size: $font-lg;
+        }
+    }
+}
+
+.secondary-nav {
+    .menu-item {
+        margin-bottom: $margin-md;
+        
+    }
+    a {
+        color: $slate-gray-mid;
+        font-size: $font-base;
+    }
+}
+
+//Global social menu widget
+.social-menu {
+    &__list {
+        display:flex;
+        align-items: center;
+    }
+    &__item {
+        padding: $padding-sm;
+        margin-right: $margin-sm;
+    }
+    &__link {
+        color: $black;
+        font-size: $font-xxl;
+    }
+}
+
+
+// ARTICLE FEEDS ON THE CATEGORY PAGES
+
+
+//FEATURED ARTICLE SECTION AT THE TOP
+.category-featured {
+    &__article {
+        padding: 0;
+        background-color: $black;
+        margin-bottom: $margin-xl;
+    }
+    &__main {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 250px;
+    }
+    &__permalink {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: flex-end;
+    }
+    &__heading {
+        background-color: $black-overlay-md;
+        padding: $padding-sm;
+        width: 80%;
+    }
+    &__title {
+        margin: $margin-sm 0;
+        color: $white;
+        font-weight: normal;
+        font-size: $font-xl;
+    }
+    &__date {
+        color: $gray-light;
+    }
+    &__meta {
+        padding: 0 $padding-sm;
+    }
+    .feed-tags {
+        margin-bottom: 0;
+    }
+}
+
+
+// REUSABLE TAGS BLOCK - FEED VIEWS
+
+.feed-tags {
+    display: flex;
+    align-items: center;
+    &__list {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: $margin-sm 0;
+    }
+    li {
+        margin-right: $margin-sm;
+        margin-bottom: $margin-sm;
+        border-bottom: 1px solid $accent-light;
+        padding: $padding-xs;
+        background-color: $accent-mid;
+        a {
+            color: $black-muted;
+        }
+    }
+}
+
+.category-heading {
+    padding: $padding-lg $padding-sm;
+    margin: 0;
+    font-weight: normal;
+    font-size: $font-xl;
+    &--light {
+        color: $black;
+        background-color: $white;
+    }
+    &--dark {
+        background-color: $black;
+        color: $gray-light;
+    }
+}
+
+
+
+.feed-article {
+    margin-bottom: $margin-xxl;
+    padding: 0 $padding-sm;
+    &__body {
+        display: flex;
+        align-items: flex-end;
+    }
+    &__text-wrap {
+        padding: 0 $padding-sm;
+    }
+    &__heading {
+        margin: $margin-sm 0;
+        font-size: $font-lg;
+    }
+    &__heading-link {
+        color: $black;
+    }
+    &__date {
+        color: $black-muted;
+    }
+    &__meta {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+// =================================
+// SINGLE ARTICLE STYLES
+// =================================
+
+.single-article {
+    &__header {
+        padding: $padding-sm;
+    }
+    &__heading {
+        margin-bottom: $margin-md;
+        margin-top: 0;
+        font-size: $font-xl;
+    }
+    &__heading-link {
+        color: $black;
+        font-size: $font-xxl;
+    }
+    &__category-link {
+        a {
+            border-bottom: $accent-mid 2px solid;
+            color: $black;
+        }
+    }
+    &__body {
+        padding: $padding-md;
+        p:first-child {
+            color: $black;
+            font-weight: bold;
+        }
+    }
+    &__footer {
+        padding: $padding-sm;
+    }
+}
+
+
+//Single Page
+.single-page {
+    padding-top: $padding-md;
+    &__header {
+        padding: $padding-sm;
+    }
+    &__heading {
+        margin-bottom: $margin-md;
+        margin-top: 0;
+        font-size: $font-xl;
+    }
+    &__body {
+        padding: 0 $padding-md;
+    }
+}
+
+
+//Contact form
+.contact-form {
+    width: 80%;
+    margin-top: $margin-xxl;
+    &__form-group {
+        margin-bottom: $margin-sm;
+    }
+    &__label {
+        color: $black-muted;
+        font-size: $font-base;
+    }
+    &__input {
+        padding: $padding-sm;
+        width: 100%;
+    }
+    &__textarea {
+        padding: $padding-sm;
+        width: 100%;
+        min-height: 150px;
+    }
+    &__submit {
+        padding: $padding-md;
+        border-radius: $padding-sm;
+        border: 0px;
+        background-color: $accent-mid;
+        color: $black;
+    }
+}
+
+
+//Archive / Tag Feed pages:
+.archive-feed {
+    padding-top: $padding-sm;
+}
+
+//Search Results - add border between results to account for pages
+.search-results-feed {
+    > .feed-article {
+        border-top: $gray-light solid 1px;
+        padding-top: $padding-md;
+    }
+}
+
+//Global pagination widget
+.pagination {
+    padding: $padding-sm;
+    a, span {
+        color: $black-muted;
+        font-size: $font-lg;
+        margin-right: $margin-xs;
+    }
+}
+
+//Global share widget
+.share {
+    .social-menu__list {
+        display: inline-flex;
+        margin: 0 $margin-sm;
+    }
+    &__link {
+        margin-right: $margin-sm;
+    }
+}
+
+//Custom for 404 page
+.article-404 {
+    min-height: 200px;
+    &__return {
+        border-bottom: $accent-mid 2px solid;
+    }
+}
+
+
+//Global Sidebar
+.global-sidebar {
+    margin-top: $margin-xl;
+    // border: $margin-lg $black solid;
+    &__content {
+        // padding: $padding-sm;
+        >div {
+            padding: $padding-sm;
+        }
+    }
+    &__heading {
+        margin-bottom: $margin-sm;
+    }
+    //Nested Widgets
+    .search-input {
+        display: block;
+        width: 80%;
+        margin-bottom: $margin-sm;
+        padding: $padding-sm;
+    }
+    .search-submit {
+        padding: $padding-sm;
+        border-radius: $padding-xs;
+        border: 0px;
+        background-color: $slate-gray-mid;
+        color: $white;
+    }
+    .widget_recent_entries, .widget_archive {
+        ul {
+            margin-top: 0;
+            li {
+                padding: $padding-sm 0;
+                a {
+                    color: $black-muted;
+                }
+            }
+        }
+    }
+    .widget_custom_html {
+        margin-top: 0;
+    }
+}
+
+
+//Global site footer
+.footer {
+    background-color: $black-muted;
+    color: $white;
+    &__content {
+        padding: $padding-sm;
+    }
+    &__nav {
+        ul {
+        display: flex;
+        flex-wrap: wrap;
+
+            li {
+                width: 50%;
+                margin-bottom: $margin-sm;
+                a {
+                    color: $white;
+                }
+            }
+        }
+    }
+    &__meta {
+        margin-bottom: 0;
+        color: $white;
+        font-size: $font-sm;
+        padding: $padding-md;
+    }
+    
+}

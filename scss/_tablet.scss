@@ -1,0 +1,171 @@
+// Tablet Styles
+
+
+@media only screen and (min-width: $breakpoint-tablet) {
+
+
+    .main-content {
+        margin-top: 0;
+    }
+
+    //Main category layout:
+    .category-feed, .archive-feed {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .homepage-feed {
+        &__non-featured {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    .feed-article {
+        width: 46%;
+        margin: $margin-sm 1%;
+    }
+
+    .pagination {
+        width: 100%;
+        text-align: center;
+        margin-top: $margin-xxl;
+    }
+
+    .header {
+        position: static;
+    }
+
+    .branding-bar {
+        justify-content: center;
+        box-shadow: none;
+        padding-bottom: 0;
+        &__right {
+            display: none;
+        }
+        &__title-text {
+            font-size: $font-huge;
+        }
+    }
+
+    .top-menu-wrapper {
+        position: static;
+        display: block;
+        padding: 0;
+    }
+
+    .main-nav {
+        margin-bottom: $margin-sm;
+        ul {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+        .menu-item {
+            border: 0;
+            padding: $padding-sm;
+            background-color: $black;
+            a {
+                color: $white;
+                font-weight: normal;
+                font-size: $font-base;
+            }
+        }
+
+        
+    }
+
+    .secondary-nav {
+        ul {
+            display: flex;
+            justify-content: center;
+            margin: 0; 
+        }
+        .menu-item {
+            margin: 0 $margin-sm; 
+        }
+    }
+
+    .social-menu {
+        &__link {
+            font-size: $font-lg;
+        }
+    }
+
+    //Center the social links menu inside the header
+    .social-menu--header {
+        .social-menu {
+            width: 50%;
+            margin: 0 auto;
+            &__list {
+                justify-content: center;
+            }
+        }
+        
+    }
+
+    //Sidebar and widgets
+    .global-sidebar {
+        border: $margin-lg $black solid;
+        &__content {
+            padding: $padding-sm;
+        }
+        .search-input {
+            max-width: 50%;
+        }
+    }
+
+    //Single Article Pages:
+    .single-article {
+        width: 80%;
+        margin: 0 auto;
+        &__header {
+            padding: 0;
+        }
+        &__heading {
+            margin-top: $margin-xl;
+        }
+        &__img-wrap {
+            img {
+                width: 100%;
+                display: block;
+            }
+        }
+        &__header-link {
+            width: 100%;
+            display: block;
+        }
+        &__body {
+            padding-left: 0;
+        }
+        &__footer {
+            padding: 0;
+        }
+        &__meta {
+            margin-bottom: $margin-md;
+        }
+    }
+
+    //Single pages
+    .single-page {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    //Contact form
+    .contact-form {
+        width: 75%;
+        margin: $margin-xxl auto;
+        padding-top: $padding-xl;
+    }
+
+    //Center and narrow the whole content on the contact form page:
+    .contact {
+        .single-page {
+            width: 60%;
+            text-align: center;
+        }
+    }
+
+} 
