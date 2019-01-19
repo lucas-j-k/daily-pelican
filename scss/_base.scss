@@ -250,6 +250,13 @@ ul {
 // SINGLE ARTICLE STYLES
 // =================================
 
+article {
+    p {
+        line-height: 1.6;
+    }
+}
+
+
 .single-article {
     &__header {
         padding: $padding-sm;

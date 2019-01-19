@@ -682,98 +682,103 @@ ul {
 }
 
 /* line 254, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+article p {
+  line-height: 1.7;
+}
+
+/* line 261, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .single-article__header {
   padding: 8px;
 }
 
-/* line 257, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 264, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .single-article__heading {
   margin-bottom: 12px;
   margin-top: 0;
   font-size: 24px;
 }
 
-/* line 262, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 269, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .single-article__heading-link {
   color: #161616;
   font-size: 28px;
 }
 
-/* line 267, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 274, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .single-article__category-link a {
   border-bottom: #F7CE4B 2px solid;
   color: #161616;
 }
 
-/* line 272, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 279, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .single-article__body {
   padding: 12px;
 }
 
-/* line 274, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 281, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .single-article__body p:first-child {
   color: #161616;
   font-weight: bold;
 }
 
-/* line 279, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 286, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .single-article__footer {
   padding: 8px;
 }
 
-/* line 286, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 293, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .single-page {
   padding-top: 12px;
 }
 
-/* line 288, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 295, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .single-page__header {
   padding: 8px;
 }
 
-/* line 291, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 298, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .single-page__heading {
   margin-bottom: 12px;
   margin-top: 0;
   font-size: 24px;
 }
 
-/* line 296, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 303, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .single-page__body {
   padding: 0 12px;
 }
 
-/* line 303, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 310, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .contact-form {
   width: 80%;
   margin-top: 20px;
 }
 
-/* line 306, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 313, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .contact-form__form-group {
   margin-bottom: 8px;
 }
 
-/* line 309, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 316, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .contact-form__label {
   color: #494949;
   font-size: 14px;
 }
 
-/* line 313, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 320, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .contact-form__input {
   padding: 8px;
   width: 100%;
 }
 
-/* line 317, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 324, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .contact-form__textarea {
   padding: 8px;
   width: 100%;
   min-height: 150px;
 }
 
-/* line 322, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 329, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .contact-form__submit {
   padding: 12px;
   border-radius: 8px;
@@ -782,66 +787,66 @@ ul {
   color: #161616;
 }
 
-/* line 333, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 340, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .archive-feed {
   padding-top: 8px;
 }
 
-/* line 339, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 346, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .search-results-feed > .feed-article {
   border-top: #cccccc solid 1px;
   padding-top: 12px;
 }
 
-/* line 346, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 353, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .pagination {
   padding: 8px;
 }
 
-/* line 348, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 355, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .pagination a, .pagination span {
   color: #494949;
   font-size: 18px;
   margin-right: 4px;
 }
 
-/* line 357, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 364, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .share .social-menu__list {
   display: inline-flex;
   margin: 0 8px;
 }
 
-/* line 361, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 368, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .share__link {
   margin-right: 8px;
 }
 
-/* line 367, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 374, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .article-404 {
   min-height: 200px;
 }
 
-/* line 369, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 376, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .article-404__return {
   border-bottom: #F7CE4B 2px solid;
 }
 
-/* line 376, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 383, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .global-sidebar {
   margin-top: 18px;
 }
 
-/* line 381, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 388, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .global-sidebar__content > div {
   padding: 8px;
 }
 
-/* line 385, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 392, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .global-sidebar__heading {
   margin-bottom: 8px;
 }
 
-/* line 389, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 396, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .global-sidebar .search-input {
   display: block;
   width: 80%;
@@ -849,7 +854,7 @@ ul {
   padding: 8px;
 }
 
-/* line 395, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 402, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .global-sidebar .search-submit {
   padding: 8px;
   border-radius: 4px;
@@ -858,55 +863,55 @@ ul {
   color: #ffffff;
 }
 
-/* line 403, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 410, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .global-sidebar .widget_recent_entries ul, .global-sidebar .widget_archive ul {
   margin-top: 0;
 }
 
-/* line 405, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 412, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .global-sidebar .widget_recent_entries ul li, .global-sidebar .widget_archive ul li {
   padding: 8px 0;
 }
 
-/* line 407, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 414, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .global-sidebar .widget_recent_entries ul li a, .global-sidebar .widget_archive ul li a {
   color: #494949;
 }
 
-/* line 413, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 420, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .global-sidebar .widget_custom_html {
   margin-top: 0;
 }
 
-/* line 420, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 427, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .footer {
   background-color: #494949;
   color: #ffffff;
 }
 
-/* line 423, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 430, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .footer__content {
   padding: 8px;
 }
 
-/* line 427, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 434, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .footer__nav ul {
   display: flex;
   flex-wrap: wrap;
 }
 
-/* line 431, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 438, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .footer__nav ul li {
   width: 50%;
   margin-bottom: 8px;
 }
 
-/* line 434, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 441, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .footer__nav ul li a {
   color: #ffffff;
 }
 
-/* line 440, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
+/* line 447, C:/xampp/htdocs/news-site/wp-content/themes/news-site-theme/scss/_base.scss */
 .footer__meta {
   margin-bottom: 0;
   color: #ffffff;
